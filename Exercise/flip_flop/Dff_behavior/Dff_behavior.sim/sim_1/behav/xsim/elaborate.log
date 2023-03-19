@@ -1,0 +1,14 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 68d42b25b7ec4e8ba64755a14ec00051 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Dff_tb_behav xil_defaultlib.Dff_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Winter/Desktop/vivado/Exercise/flip_flop/Dff_behavior/Dff_behavior.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Dff
+Compiling module xil_defaultlib.Dff_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Dff_tb_behav

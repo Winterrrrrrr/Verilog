@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Exercise/flip_flop/Code/Dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Exercise/flip_flop/Code/Dff_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dff_tb

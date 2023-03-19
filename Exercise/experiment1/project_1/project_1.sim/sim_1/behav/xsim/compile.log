@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Exercise/experiment1/Code/experiment1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module experiment1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Exercise/experiment1/Code/pencode42.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pencode42
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Exercise/experiment1/Code/seg7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Exercise/experiment1/Code/experiment1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module experiment1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Exercise/experiment1/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

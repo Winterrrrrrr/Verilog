@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Exercise/pencode42/Code/pencode42.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pencode42
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Exercise/pencode42/Code/pencode42_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pencode42_tb

@@ -1,0 +1,189 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Oct  7 12:23:46 2022
+# Process ID: 1984
+# Current directory: C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4108 C:\Users\Winter\Desktop\vivado\Homework\Week5\behavior\behavior.xpr
+# Log file: C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/vivado.log
+# Journal file: C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/Winter/Desktop/vivado/Homework/Week5/code/behavior_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'seg7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj seg7_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Homework/Week5/code/behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+"xelab -wto 90e596479b6f4f28b4bc2d3f012672b5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot seg7_behav xil_defaultlib.seg7 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 90e596479b6f4f28b4bc2d3f012672b5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot seg7_behav xil_defaultlib.seg7 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot seg7_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim/xsim.dir/seg7_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim/xsim.dir/seg7_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Oct  7 12:26:26 2022. For additional details about this file, please refer to the WebTalk help file at D:/Software/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct  7 12:26:26 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "seg7_behav -key {Behavioral:sim_1:Functional:seg7} -tclbatch {seg7.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source seg7.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'seg7_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 893.820 ; gain = 9.266
+update_compile_order -fileset sim_1
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 900.605 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'behavior_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj behavior_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Homework/Week5/code/behavior_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module behavior_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+"xelab -wto 90e596479b6f4f28b4bc2d3f012672b5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot behavior_tb_behav xil_defaultlib.behavior_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 90e596479b6f4f28b4bc2d3f012672b5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot behavior_tb_behav xil_defaultlib.behavior_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.behavior_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot behavior_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim/xsim.dir/behavior_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim/xsim.dir/behavior_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Oct  7 12:27:24 2022. For additional details about this file, please refer to the WebTalk help file at D:/Software/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct  7 12:27:24 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 900.605 ; gain = 0.000
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'behavior_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj behavior_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Homework/Week5/code/behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Homework/Week5/code/behavior_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module behavior_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+"xelab -wto 90e596479b6f4f28b4bc2d3f012672b5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot behavior_tb_behav xil_defaultlib.behavior_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 90e596479b6f4f28b4bc2d3f012672b5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot behavior_tb_behav xil_defaultlib.behavior_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.behavior_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot behavior_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "behavior_tb_behav -key {Behavioral:sim_1:Functional:behavior_tb} -tclbatch {behavior_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source behavior_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 150 ns : File "C:/Users/Winter/Desktop/vivado/Homework/Week5/code/behavior_tb.v" Line 15
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'behavior_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  7 12:32:08 2022...

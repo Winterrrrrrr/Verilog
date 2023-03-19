@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Drink_machine_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Drink_machine_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="121614200fs"></ZoomStartTime>
+      <ZoomEndTime time="210464201fs"></ZoomEndTime>
+      <Cursor1Time time="125414000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="144"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/Drink_machine_tb/CP" type="logic">
+      <obj_property name="ElementShortName">CP</obj_property>
+      <obj_property name="ObjectShortName">CP</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Drink_machine_tb/X" type="array">
+      <obj_property name="ElementShortName">X[1:0]</obj_property>
+      <obj_property name="ObjectShortName">X[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Drink_machine_tb/machine1/cur_state" type="array">
+      <obj_property name="ElementShortName">cur_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_state[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Drink_machine_tb/machine1/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Drink_machine_tb/Z" type="array">
+      <obj_property name="ElementShortName">Z[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Z[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Drink_machine_tb/machine1/S0" type="array">
+      <obj_property name="ElementShortName">S0[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S0[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Drink_machine_tb/machine1/S1" type="array">
+      <obj_property name="ElementShortName">S1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S1[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Drink_machine_tb/machine1/S2" type="array">
+      <obj_property name="ElementShortName">S2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S2[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Drink_machine_tb/machine1/S3" type="array">
+      <obj_property name="ElementShortName">S3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S3[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Drink_machine_tb/machine1/S4" type="array">
+      <obj_property name="ElementShortName">S4[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S4[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Drink_machine_tb/Rst_async_n" type="logic">
+      <obj_property name="ElementShortName">Rst_async_n</obj_property>
+      <obj_property name="ObjectShortName">Rst_async_n</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

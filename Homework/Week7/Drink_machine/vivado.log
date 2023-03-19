@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 26 10:57:31 2022
+# Process ID: 644
+# Current directory: C:/Users/Winter/Desktop/vivado/Homework/Week7/Drink_machine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18028 C:\Users\Winter\Desktop\vivado\Homework\Week7\Drink_machine\Drink_machine.xpr
+# Log file: C:/Users/Winter/Desktop/vivado/Homework/Week7/Drink_machine/vivado.log
+# Journal file: C:/Users/Winter/Desktop/vivado/Homework/Week7/Drink_machine\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Winter/Desktop/vivado/Homework/Week7/Drink_machine/Drink_machine.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Winter/Desktop/vivado/Homework/Week7/Code/Drink_machine_tb.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 26 11:05:48 2022...

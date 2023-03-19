@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Oct  7 12:23:46 2022
+# Process ID: 1984
+# Current directory: C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4108 C:\Users\Winter\Desktop\vivado\Homework\Week5\behavior\behavior.xpr
+# Log file: C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/vivado.log
+# Journal file: C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Winter/Desktop/vivado/Homework/Week5/behavior/behavior.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/Winter/Desktop/vivado/Homework/Week5/code/behavior_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+source seg7.tcl
+update_compile_order -fileset sim_1
+relaunch_sim
+launch_simulation
+close_sim
+launch_simulation
+source behavior_tb.tcl
+close_sim

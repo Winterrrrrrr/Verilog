@@ -1,0 +1,8 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2d075ea8b8f142f19a8d8744ee97c85d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Drink_machine_tb_behav xil_defaultlib.Drink_machine_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 3 for port 'cur_state' [C:/Users/Winter/Desktop/vivado/Homework/Week7/Code/Drink_machine_tb.v:12]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

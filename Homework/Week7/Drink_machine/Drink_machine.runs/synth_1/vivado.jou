@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Oct 22 12:51:14 2022
+# Process ID: 37200
+# Current directory: C:/Users/Winter/Desktop/vivado/Homework/Week7/Drink_machine/Drink_machine.runs/synth_1
+# Command line: vivado.exe -log Drink_machine_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Drink_machine_top.tcl
+# Log file: C:/Users/Winter/Desktop/vivado/Homework/Week7/Drink_machine/Drink_machine.runs/synth_1/Drink_machine_top.vds
+# Journal file: C:/Users/Winter/Desktop/vivado/Homework/Week7/Drink_machine/Drink_machine.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Drink_machine_top.tcl -notrace

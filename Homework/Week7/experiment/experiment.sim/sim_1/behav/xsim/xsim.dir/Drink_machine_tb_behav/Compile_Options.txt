@@ -1,0 +1,1 @@
+-wto "2d075ea8b8f142f19a8d8744ee97c85d" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Drink_machine_tb_behav" "xil_defaultlib.Drink_machine_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Homework/Week6/Code/CTRDIV16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRDIV16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Homework/Week6/Code/CTRDIV16_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRDIV16_tb

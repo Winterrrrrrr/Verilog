@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct  6 23:55:25 2022
+# Process ID: 15032
+# Current directory: C:/Users/Winter/Desktop/vivado/Homework/Week5/data_flow
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26432 C:\Users\Winter\Desktop\vivado\Homework\Week5\data_flow\data_flow.xpr
+# Log file: C:/Users/Winter/Desktop/vivado/Homework/Week5/data_flow/vivado.log
+# Journal file: C:/Users/Winter/Desktop/vivado/Homework/Week5/data_flow\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Winter/Desktop/vivado/Homework/Week5/data_flow/data_flow.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: seg7
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1160.352 ; gain = 144.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'seg7' [C:/Users/Winter/Desktop/vivado/Homework/Week5/code/data_flow.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'seg7' (1#1) [C:/Users/Winter/Desktop/vivado/Homework/Week5/code/data_flow.v:1]
+WARNING: [Synth 8-3917] design seg7 has port AN[3] driven by constant 1
+WARNING: [Synth 8-3917] design seg7 has port AN[2] driven by constant 1
+WARNING: [Synth 8-3917] design seg7 has port AN[1] driven by constant 1
+WARNING: [Synth 8-3917] design seg7 has port AN[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1198.969 ; gain = 182.840
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1198.969 ; gain = 182.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1198.969 ; gain = 182.840
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 4 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Winter/Desktop/vivado/Homework/Week5/code/seg7_ctr.xdc]
+Finished Parsing XDC File [C:/Users/Winter/Desktop/vivado/Homework/Week5/code/seg7_ctr.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1274.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1411.789 ; gain = 395.660
+7 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1411.789 ; gain = 616.234
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  7 00:39:08 2022...

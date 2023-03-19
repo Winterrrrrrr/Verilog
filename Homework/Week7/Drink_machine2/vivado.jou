@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec  9 15:33:16 2022
+# Process ID: 25376
+# Current directory: C:/Users/Winter/Desktop/vivado/Homework/Week7/Drink_machine2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2204 C:\Users\Winter\Desktop\vivado\Homework\Week7\Drink_machine2\Drink_machine2.xpr
+# Log file: C:/Users/Winter/Desktop/vivado/Homework/Week7/Drink_machine2/vivado.log
+# Journal file: C:/Users/Winter/Desktop/vivado/Homework/Week7/Drink_machine2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Winter/Desktop/vivado/Homework/Week7/Drink_machine2/Drink_machine2.xpr
+update_compile_order -fileset sources_1

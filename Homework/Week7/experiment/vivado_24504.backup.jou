@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec 15 13:42:22 2022
+# Process ID: 24504
+# Current directory: C:/Users/Winter/Desktop/vivado/Homework/Week7/experiment
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11060 C:\Users\Winter\Desktop\vivado\Homework\Week7\experiment\experiment.xpr
+# Log file: C:/Users/Winter/Desktop/vivado/Homework/Week7/experiment/vivado.log
+# Journal file: C:/Users/Winter/Desktop/vivado/Homework/Week7/experiment\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Winter/Desktop/vivado/Homework/Week7/experiment/experiment.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/Winter/Desktop/vivado/Homework/Week7/experiment/Drink_machine_tb_behav.wcfg
+source Drink_machine_tb.tcl
+run 1 s
+run 1 s
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+run 1 s
+update_compile_order -fileset sim_1
+close_sim
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/Winter/Desktop/vivado/Homework/Week7/experiment/Drink_machine_tb_behav.wcfg
+source Drink_machine_tb.tcl
+run 1 s
+current_wave_config {Drink_machine_tb_behav.wcfg}
+add_wave {{/Drink_machine_tb/A}} {{/Drink_machine_tb/B}} {{/Drink_machine_tb/Y}} {{/Drink_machine_tb/Z}} {{/Drink_machine_tb/S}} 
+relaunch_sim
+run 1 s
+run 1 s
+run 1 s
+run 1 s
+run 1 s
+run 1 s
+current_wave_config {Drink_machine_tb_behav.wcfg}
+add_wave {{/Drink_machine_tb/drink/CP_20ms}} 
+relaunch_sim
+run all
+run 1 s
+relaunch_sim
+run 1 s
+save_wave_config {C:/Users/Winter/Desktop/vivado/Homework/Week7/experiment/Drink_machine_tb_behav.wcfg}
+close_sim

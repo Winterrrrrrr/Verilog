@@ -1,0 +1,12 @@
+
+{ 
+    crc :  14067665931400491764  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 2d075ea8b8f142f19a8d8744ee97c85d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Drink_machine_tb_behav xil_defaultlib.Drink_machine_tb xil_defaultlib.glbl" , 
+    buildDate : "May 24 2019" , 
+    buildTime : "15:06:07" , 
+    linkCmd : "D:\\Software\\Xilinx\\Vivado\\2019.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/Drink_machine_tb_behav/xsimk.exe\"   \"xsim.dir/Drink_machine_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/Drink_machine_tb_behav/obj/xsim_1.win64.obj\" -L\"D:\\Software\\Xilinx\\Vivado\\2019.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

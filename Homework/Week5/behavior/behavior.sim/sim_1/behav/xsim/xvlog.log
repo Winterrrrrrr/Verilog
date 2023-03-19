@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Homework/Week5/code/behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Homework/Week5/code/behavior_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module behavior_tb

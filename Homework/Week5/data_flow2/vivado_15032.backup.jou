@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct  6 23:55:25 2022
+# Process ID: 15032
+# Current directory: C:/Users/Winter/Desktop/vivado/Homework/Week5/data_flow
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26432 C:\Users\Winter\Desktop\vivado\Homework\Week5\data_flow\data_flow.xpr
+# Log file: C:/Users/Winter/Desktop/vivado/Homework/Week5/data_flow/vivado.log
+# Journal file: C:/Users/Winter/Desktop/vivado/Homework/Week5/data_flow\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Winter/Desktop/vivado/Homework/Week5/data_flow/data_flow.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1

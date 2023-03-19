@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Drink_machine_tb_func_synth.v" \
+"../../../../../../Code/Drink_machine_tb.v" \
+
+# Do not sort compile order
+nosort

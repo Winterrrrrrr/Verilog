@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Homework/Week7/Code/Drink_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Drink_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Winter/Desktop/vivado/Homework/Week7/Code/Drink_machine_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Drink_machine_tb

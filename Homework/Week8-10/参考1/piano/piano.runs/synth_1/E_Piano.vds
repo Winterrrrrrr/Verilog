@@ -1,0 +1,491 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun 25 12:31:25 2021
+# Process ID: 10440
+# Current directory: C:/Users/001/Desktop/piano/piano.runs/synth_1
+# Command line: vivado.exe -log E_Piano.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source E_Piano.tcl
+# Log file: C:/Users/001/Desktop/piano/piano.runs/synth_1/E_Piano.vds
+# Journal file: C:/Users/001/Desktop/piano/piano.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source E_Piano.tcl -notrace
+Command: synth_design -top E_Piano -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8996 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 835.125 ; gain = 234.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'E_Piano' [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/E_piano.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Basys2_keyBoard' [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Basys2_Keyboard.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Basys2_Keyboard.v:57]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000110010 is unreachable [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Basys2_Keyboard.v:84]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000010111110 is unreachable [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Basys2_Keyboard.v:84]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000011001000 is unreachable [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Basys2_Keyboard.v:84]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Basys2_Keyboard.v:84]
+INFO: [Synth 8-6157] synthesizing module 'Record' [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Record.v:23]
+WARNING: [Synth 8-6090] variable 'count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Record.v:219]
+WARNING: [Synth 8-6090] variable 'count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Record.v:224]
+WARNING: [Synth 8-567] referenced signal 'count_max' should be on the sensitivity list [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Record.v:234]
+WARNING: [Synth 8-567] referenced signal 'mem' should be on the sensitivity list [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Record.v:234]
+INFO: [Synth 8-6155] done synthesizing module 'Record' (1#1) [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Record.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Basys2_keyBoard' (2#1) [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Basys2_Keyboard.v:24]
+INFO: [Synth 8-6157] synthesizing module 'make_melody' [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/make_melody.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'make_melody' (3#1) [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/make_melody.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Run_Horse' [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Run_Horse.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'Run_Horse' (4#1) [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Run_Horse.v:26]
+INFO: [Synth 8-6157] synthesizing module 'Music_Score' [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Music_score.v:23]
+WARNING: [Synth 8-3848] Net music in module/entity Music_Score does not have driver. [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Music_score.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Music_Score' (5#1) [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Music_score.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'E_Piano' (6#1) [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/E_piano.v:23]
+WARNING: [Synth 8-3331] design Music_Score has unconnected port music[7]
+WARNING: [Synth 8-3331] design Music_Score has unconnected port music[6]
+WARNING: [Synth 8-3331] design Music_Score has unconnected port music[5]
+WARNING: [Synth 8-3331] design Music_Score has unconnected port music[4]
+WARNING: [Synth 8-3331] design Music_Score has unconnected port music[3]
+WARNING: [Synth 8-3331] design Music_Score has unconnected port music[2]
+WARNING: [Synth 8-3331] design Music_Score has unconnected port music[1]
+WARNING: [Synth 8-3331] design Music_Score has unconnected port music[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 908.648 ; gain = 307.531
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 908.648 ; gain = 307.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 908.648 ; gain = 307.531
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 908.648 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/001/Desktop/piano/piano.srcs/constrs_1/new/piano_con.xdc]
+Finished Parsing XDC File [C:/Users/001/Desktop/piano/piano.srcs/constrs_1/new/piano_con.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/001/Desktop/piano/piano.srcs/constrs_1/new/piano_con.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/E_Piano_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/E_Piano_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1021.590 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1021.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1021.590 ; gain = 420.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1021.590 ; gain = 420.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1021.590 ; gain = 420.473
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'num_reg' in module 'Basys2_keyBoard'
+INFO: [Synth 8-5546] ROM "music" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "music" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "temp_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "num" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "origin" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Run_Horse'
+INFO: [Synth 8-5587] ROM size for "display" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'record_asci_reg' [C:/Users/001/Desktop/piano/piano.srcs/sources_1/new/Record.v:237]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                             0000 |                             0000
+                 iSTATE3 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                  iSTATE |                             0011 |                             0011
+                 iSTATE0 |                             0100 |                             0100
+                 iSTATE9 |                             0101 |                             0101
+                 iSTATE8 |                             0110 |                             0110
+                 iSTATE6 |                             0111 |                             0111
+                 iSTATE7 |                             1000 |                             1000
+                 iSTATE5 |                             1001 |                             1001
+                 iSTATE2 |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'num_reg' using encoding 'sequential' in module 'Basys2_keyBoard'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                iSTATE10 |                 0000000000000001 |                 0000000000000001
+                 iSTATE4 |                 0000000000000010 |                 0000000000000010
+                iSTATE13 |                 0000000000000100 |                 0000000000000100
+                iSTATE12 |                 0000000000001000 |                 0000000000001000
+                 iSTATE6 |                 0000000000010000 |                 0000000000010000
+                 iSTATE0 |                 0000000000100000 |                 0000000000100000
+                 iSTATE8 |                 0000000001000000 |                 0000000001000000
+                 iSTATE2 |                 0000000010000000 |                 0000000010000000
+                 iSTATE1 |                 0000000100000000 |                 0000000100000000
+                  iSTATE |                 0000001000000000 |                 0000001000000000
+                 iSTATE3 |                 0000010000000000 |                 0000010000000000
+                 iSTATE9 |                 0000100000000000 |                 0000100000000000
+                 iSTATE5 |                 0001000000000000 |                 0001000000000000
+                iSTATE14 |                 0010000000000000 |                 0010000000000000
+                iSTATE11 |                 0100000000000000 |                 0100000000000000
+                 iSTATE7 |                 1000000000000000 |                 1000000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'Run_Horse'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1021.590 ; gain = 420.473
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 134   
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	  22 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	  25 Input     11 Bit        Muxes := 1     
+	  22 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 390   
+	  11 Input      8 Bit        Muxes := 2     
+	  25 Input      8 Bit        Muxes := 1     
+	  23 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	  22 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 390   
+	  11 Input      1 Bit        Muxes := 1     
+	  25 Input      1 Bit        Muxes := 1     
+	  23 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Record 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 128   
+	                7 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 384   
+	   2 Input      1 Bit        Muxes := 384   
+Module Basys2_keyBoard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  25 Input     11 Bit        Muxes := 1     
+	  22 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	  11 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	  25 Input      8 Bit        Muxes := 1     
+	  23 Input      8 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	  25 Input      1 Bit        Muxes := 1     
+	  23 Input      1 Bit        Muxes := 1     
+Module make_melody 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  22 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+Module Run_Horse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module Music_Score 
+Detailed RTL Component Info : 
++---Muxes : 
+	  22 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "U1/music" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "U2/origin" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "U4/display" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1039.172 ; gain = 438.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Music_Score | seg        | 32x7          | LUT            | 
+|E_Piano     | U4/seg     | 32x7          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 1039.172 ; gain = 438.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 1039.172 ; gain = 438.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1062.016 ; gain = 460.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1067.051 ; gain = 465.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1067.051 ; gain = 465.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1067.051 ; gain = 465.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1067.051 ; gain = 465.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1067.051 ; gain = 465.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1067.051 ; gain = 465.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    34|
+|3     |LUT1   |     9|
+|4     |LUT2   |    31|
+|5     |LUT3   |    51|
+|6     |LUT4   |   132|
+|7     |LUT5   |   166|
+|8     |LUT6   |   853|
+|9     |MUXF7  |    72|
+|10    |MUXF8  |    32|
+|11    |FDRE   |  1284|
+|12    |LD     |     8|
+|13    |IBUF   |     7|
+|14    |OBUF   |    28|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------------+------+
+|      |Instance |Module          |Cells |
++------+---------+----------------+------+
+|1     |top      |                |  2709|
+|2     |  U1     |Basys2_keyBoard |  2414|
+|3     |    U5   |Record          |  2241|
+|4     |  U2     |make_melody     |   140|
+|5     |  U3     |Run_Horse       |    92|
+|6     |  U4     |Music_Score     |    26|
++------+---------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1067.051 ; gain = 465.934
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:02 ; elapsed = 00:01:19 . Memory (MB): peak = 1067.051 ; gain = 352.992
+Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1067.051 ; gain = 465.934
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1078.465 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 146 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'E_Piano' is not ideal for floorplanning, since the cellview 'Record' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1078.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:33 . Memory (MB): peak = 1078.465 ; gain = 772.332
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1078.465 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/001/Desktop/piano/piano.runs/synth_1/E_Piano.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file E_Piano_utilization_synth.rpt -pb E_Piano_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 25 12:33:08 2021...

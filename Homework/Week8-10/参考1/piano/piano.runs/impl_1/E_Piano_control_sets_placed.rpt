@@ -1,0 +1,227 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Jun 25 12:34:09 2021
+| Host         : LAPTOP-UEL2D9MD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file E_Piano_control_sets_placed.rpt
+| Design       : E_Piano
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   149 |
+|    Minimum number of control sets                        |   149 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    60 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   149 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |   133 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              61 |           34 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             157 |           43 |
+| Yes          | No                    | No                     |              29 |           10 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1045 |          321 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+----------------------------------+-------------------------------+------------------+----------------+
+|          Clock Signal         |           Enable Signal          |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-------------------------------+----------------------------------+-------------------------------+------------------+----------------+
+|  U2/carry                     |                                  |                               |                1 |              1 |
+|  U3/clkdiv_reg_n_0            |                                  |                               |                1 |              1 |
+|  U5/clk_Hz                    |                                  |                               |                2 |              2 |
+|  clk_IBUF_BUFG                | U1/FSM_sequential_num[3]_i_1_n_0 |                               |                2 |              4 |
+|  clk_IBUF_BUFG                |                                  | U2/count1[5]_i_1_n_0          |                2 |              6 |
+|  U1/clk_10Hz                  | U1/music0                        | U1/p_0_in                     |                5 |              6 |
+|  U5/clk_Hz                    | U1/U5/count_max0                 | U1/U5/count_max02_out         |                2 |              7 |
+|  U5/clk_Hz                    | U1/U5/mem[45][7]_i_2_n_0         | U1/U5/mem[45][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[57][7]_i_2_n_0         | U1/U5/mem[57][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[58][7]_i_2_n_0         | U1/U5/mem[58][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[46][7]_i_2_n_0         | U1/U5/mem[46][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[42][7]_i_2_n_0         | U1/U5/mem[42][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[50][7]_i_2_n_0         | U1/U5/mem[50][7]_i_1_n_0      |                4 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[48][7]_i_2_n_0         | U1/U5/mem[48][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[51][7]_i_2_n_0         | U1/U5/mem[51][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[44][7]_i_2_n_0         | U1/U5/mem[44][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[52][7]_i_2_n_0         | U1/U5/mem[52][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[40][7]_i_2_n_0         | U1/U5/mem[40][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[4][7]_i_2_n_0          | U1/U5/mem[4][7]_i_1_n_0       |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[53][7]_i_2_n_0         | U1/U5/mem[53][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[55][7]_i_2_n_0         | U1/U5/mem[55][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[43][7]_i_2_n_0         | U1/U5/mem[43][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[47][7]_i_2_n_0         | U1/U5/mem[47][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[41][7]_i_2_n_0         | U1/U5/mem[41][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[59][7]_i_2_n_0         | U1/U5/mem[59][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[68][7]_i_2_n_0         | U1/U5/mem[68][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[69][7]_i_2_n_0         | U1/U5/mem[69][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[64][7]_i_2_n_0         | U1/U5/mem[64][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[66][7]_i_2_n_0         | U1/U5/mem[66][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[65][7]_i_2_n_0         | U1/U5/mem[65][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[62][7]_i_2_n_0         | U1/U5/mem[62][7]_i_1_n_0      |                4 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[63][7]_i_2_n_0         | U1/U5/mem[63][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[61][7]_i_2_n_0         | U1/U5/mem[61][7]_i_1_n_0      |                4 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[67][7]_i_2_n_0         | U1/U5/mem[67][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[5][7]_i_2_n_0          | U1/U5/mem[5][7]_i_1_n_0       |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[60][7]_i_2_n_0         | U1/U5/mem[60][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[74][7]_i_2_n_0         | U1/U5/mem[74][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[78][7]_i_2_n_0         | U1/U5/mem[78][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[76][7]_i_2_n_0         | U1/U5/mem[76][7]_i_1_n_0      |                4 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[72][7]_i_2_n_0         | U1/U5/mem[72][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[73][7]_i_2_n_0         | U1/U5/mem[73][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[70][7]_i_2_n_0         | U1/U5/mem[70][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[75][7]_i_2_n_0         | U1/U5/mem[75][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[6][7]_i_2_n_0          | U1/U5/mem[6][7]_i_1_n_0       |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[71][7]_i_2_n_0         | U1/U5/mem[71][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[77][7]_i_2_n_0         | U1/U5/mem[77][7]_i_1_n_0      |                4 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[7][7]_i_2_n_0          | U1/U5/mem[7][7]_i_1_n_0       |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[85][7]_i_2_n_0         | U1/U5/mem[85][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[86][7]_i_2_n_0         | U1/U5/mem[86][7]_i_1_n_0      |                4 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[79][7]_i_2_n_0         | U1/U5/mem[79][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[87][7]_i_2_n_0         | U1/U5/mem[87][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[82][7]_i_2_n_0         | U1/U5/mem[82][7]_i_1_n_0      |                4 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[81][7]_i_2_n_0         | U1/U5/mem[81][7]_i_1_n_0      |                4 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[83][7]_i_2_n_0         | U1/U5/mem[83][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[80][7]_i_2_n_0         | U1/U5/mem[80][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[84][7]_i_2_n_0         | U1/U5/mem[84][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[91][7]_i_2_n_0         | U1/U5/mem[91][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[92][7]_i_2_n_0         | U1/U5/mem[92][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[8][7]_i_2_n_0          | U1/U5/mem[8][7]_i_1_n_0       |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[95][7]_i_2_n_0         | U1/U5/mem[95][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[90][7]_i_2_n_0         | U1/U5/mem[90][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[93][7]_i_2_n_0         | U1/U5/mem[93][7]_i_1_n_0      |                1 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[89][7]_i_2_n_0         | U1/U5/mem[89][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[94][7]_i_2_n_0         | U1/U5/mem[94][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[88][7]_i_2_n_0         | U1/U5/mem[88][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[9][7]_i_2_n_0          | U1/U5/mem[9][7]_i_1_n_0       |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[97][7]_i_2_n_0         | U1/U5/mem[97][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[98][7]_i_2_n_0         | U1/U5/mem[98][7]_i_1_n_0      |                7 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[99][7]_i_2_n_0         | U1/U5/mem[99][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[96][7]_i_2_n_0         | U1/U5/mem[96][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[0][7]_i_2_n_0          | U1/U5/mem[0][7]_i_1_n_0       |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[106][7]_i_2_n_0        | U1/U5/mem[106][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[100][7]_i_2_n_0        | U1/U5/mem[100][7]_i_1_n_0     |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[102][7]_i_2_n_0        | U1/U5/mem[102][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[112][7]_i_2_n_0        | U1/U5/mem[112][7]_i_1_n_0     |                4 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[103][7]_i_2_n_0        | U1/U5/mem[103][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[104][7]_i_2_n_0        | U1/U5/mem[104][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[101][7]_i_2_n_0        | U1/U5/mem[101][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[108][7]_i_2_n_0        | U1/U5/mem[108][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[111][7]_i_2_n_0        | U1/U5/mem[111][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[109][7]_i_2_n_0        | U1/U5/mem[109][7]_i_1_n_0     |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[10][7]_i_2_n_0         | U1/U5/mem[10][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[110][7]_i_2_n_0        | U1/U5/mem[110][7]_i_1_n_0     |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[105][7]_i_2_n_0        | U1/U5/mem[105][7]_i_1_n_0     |                1 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[107][7]_i_2_n_0        | U1/U5/mem[107][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[116][7]_i_2_n_0        | U1/U5/mem[116][7]_i_1_n_0     |                1 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[118][7]_i_2_n_0        | U1/U5/mem[118][7]_i_1_n_0     |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[113][7]_i_2_n_0        | U1/U5/mem[113][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[115][7]_i_2_n_0        | U1/U5/mem[115][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[117][7]_i_2_n_0        | U1/U5/mem[117][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[114][7]_i_2_n_0        | U1/U5/mem[114][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[120][7]_i_2_n_0        | U1/U5/mem[120][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[122][7]_i_2_n_0        | U1/U5/mem[122][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[11][7]_i_2_n_0         | U1/U5/mem[11][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[123][7]_i_2_n_0        | U1/U5/mem[123][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[121][7]_i_2_n_0        | U1/U5/mem[121][7]_i_1_n_0     |                4 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[119][7]_i_2_n_0        | U1/U5/mem[119][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[125][7]_i_2_n_0        | U1/U5/mem[125][7]_i_1_n_0     |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[126][7]_i_2_n_0        | U1/U5/mem[126][7]_i_1_n_0     |                4 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[124][7]_i_2_n_0        | U1/U5/mem[124][7]_i_1_n_0     |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[12][7]_i_2_n_0         | U1/U5/mem[12][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[13][7]_i_2_n_0         | U1/U5/mem[13][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[18][7]_i_2_n_0         | U1/U5/mem[18][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[19][7]_i_2_n_0         | U1/U5/mem[19][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[21][7]_i_2_n_0         | U1/U5/mem[21][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[23][7]_i_2_n_0         | U1/U5/mem[23][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[32][7]_i_2_n_0         | U1/U5/mem[32][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[17][7]_i_2_n_0         | U1/U5/mem[17][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[1][7]_i_2_n_0          | U1/U5/mem[1][7]_i_1_n_0       |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[31][7]_i_2_n_0         | U1/U5/mem[31][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[28][7]_i_2_n_0         | U1/U5/mem[28][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[25][7]_i_2_n_0         | U1/U5/mem[25][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[30][7]_i_2_n_0         | U1/U5/mem[30][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[15][7]_i_2_n_0         | U1/U5/mem[15][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[14][7]_i_2_n_0         | U1/U5/mem[14][7]_i_1_n_0      |                3 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[27][7]_i_2_n_0         | U1/U5/mem[27][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[29][7]_i_2_n_0         | U1/U5/mem[29][7]_i_1_n_0      |                1 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[26][7]_i_2_n_0         | U1/U5/mem[26][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[33][7]_i_2_n_0         | U1/U5/mem[33][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[34][7]_i_2_n_0         | U1/U5/mem[34][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[22][7]_i_2_n_0         | U1/U5/mem[22][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[2][7]_i_2_n_0          | U1/U5/mem[2][7]_i_1_n_0       |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[24][7]_i_2_n_0         | U1/U5/mem[24][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[16][7]_i_2_n_0         | U1/U5/mem[16][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[39][7]_i_2_n_0         | U1/U5/mem[39][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[3][7]_i_2_n_0          | U1/U5/mem[3][7]_i_1_n_0       |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[37][7]_i_2_n_0         | U1/U5/mem[37][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[36][7]_i_2_n_0         | U1/U5/mem[36][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[38][7]_i_2_n_0         | U1/U5/mem[38][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[20][7]_i_2_n_0         | U1/U5/mem[20][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/p_0_in                     | U1/U5/mem[127][7]_i_1_n_0     |                5 |              8 |
+|  clk_IBUF_BUFG                | U1/U5/switch_old_reg[7]          | U2/switch_200ms[7]_i_1_n_0    |                3 |              8 |
+|  clk_IBUF_BUFG                | U1/U5/E[0]                       |                               |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[54][7]_i_2_n_0         | U1/U5/mem[54][7]_i_1_n_0      |                3 |              8 |
+|  clk_IBUF_BUFG                | U1/ps2_byte_r[7]_i_1_n_0         |                               |                2 |              8 |
+|  U1/U5/record_asci0_carry_n_0 |                                  |                               |                8 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[56][7]_i_2_n_0         | U1/U5/mem[56][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[49][7]_i_2_n_0         | U1/U5/mem[49][7]_i_1_n_0      |                2 |              8 |
+|  U5/clk_Hz                    | U1/U5/mem[35][7]_i_2_n_0         | U1/U5/mem[35][7]_i_1_n_0      |                2 |              8 |
+|  clk_IBUF_BUFG                | U1/U5/key_code_old_reg[7][0]     |                               |                4 |              9 |
+|  U1/clk_10Hz                  |                                  | U1/p_0_in                     |                4 |             11 |
+|  U5/clk_Hz                    |                                  | U1/U5/count[6]_i_1_n_0        |                4 |             13 |
+|  U2/clk_1mhz                  |                                  |                               |                7 |             13 |
+|  U3/clkdiv_reg_n_0            |                                  | U3/current_state[14]_i_1_n_0  |                4 |             15 |
+|  clk_IBUF_BUFG                |                                  | U3/clkdiv                     |                6 |             24 |
+|  clk_IBUF_BUFG                |                                  | U1/U5/count_for_Hz[0]_i_1_n_0 |                7 |             26 |
+|  clk_IBUF_BUFG                |                                  | U1/clear                      |                8 |             31 |
+|  clk_IBUF_BUFG                |                                  | U1/U5/E[0]                    |                8 |             31 |
+|  clk_IBUF_BUFG                |                                  |                               |               15 |             36 |
++-------------------------------+----------------------------------+-------------------------------+------------------+----------------+
+
+

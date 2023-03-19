@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun 25 12:31:25 2021
+# Process ID: 10440
+# Current directory: C:/Users/001/Desktop/piano/piano.runs/synth_1
+# Command line: vivado.exe -log E_Piano.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source E_Piano.tcl
+# Log file: C:/Users/001/Desktop/piano/piano.runs/synth_1/E_Piano.vds
+# Journal file: C:/Users/001/Desktop/piano/piano.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source E_Piano.tcl -notrace

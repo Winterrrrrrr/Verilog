@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/piano/piano.srcs/sources_1/new/Record.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Record
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/piano/piano.srcs/sources_1/new/Basys2_keyBoard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Basys2_keyBoard
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/piano/piano.srcs/sources_1/new/Music_Score.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Music_Score
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/piano/piano.srcs/sources_1/new/make_melody.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_melody
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/piano/piano.srcs/sources_1/new/Run_Horse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Run_Horse
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/piano/piano.srcs/sources_1/new/E_piano.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module E_Piano
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/piano/piano.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
